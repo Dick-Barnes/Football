@@ -10,10 +10,28 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("What is Football to You?")
+                .font(.largeTitle)
+                .fontWeight(.light)
+                .foregroundStyle(.green)
+            HStack {
+                Image(systemName:"figure.american.football")
+                    .resizable()
+                    .scaledToFit()
+                    .foregroundStyle(.tint)
+                Image(systemName: "figure.australian.football")
+                    .resizable()
+                    .scaledToFit()
+                    .imageScale(.large)
+                    .foregroundStyle(.indigo)
+                Image(systemName: "figure.indoor.soccer")
+                    .resizable()
+                    .scaledToFit()
+                    .imageScale(.large)
+                    .foregroundStyle(.purple)
+            }
+            .padding(.top, 4)
+            
         }
         .padding()
     }
